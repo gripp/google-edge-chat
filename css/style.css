@@ -1,0 +1,29 @@
+#chat-window {
+  border: 2px solid black;
+  background-color: #eee;
+  height: 500px;
+  margin-bottom: 25px;
+  overflow-y: scroll;
+  width: 700px;
+}
+
+#remark-input {
+  height: 50px;
+  margin-right: 25px;
+  width: 500px;
+}
+
+#send-link {
+  background-color:  gray;
+  border: 1px solid black;
+  color: white;
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  width: 75px;
+}
+
+#send-link:hover {
+  color: blue;
+}

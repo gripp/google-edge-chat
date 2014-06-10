@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+  <head>
+    <title>Google Edge Chat Demo</title>
+    <link href='/css/style.css' rel='stylesheet' type='text/css'>
+    <script src="/js/ajax.js"></script>
+  </head>
+
+  <body>
+    <h1>Google Edge Chat Demo</h1>
+    <div id="chat-window"></div>
+    <input
+        id="remark-input"
+        name="remark"
+        onkeypress="textKeyPress(event);"
+        placeholder="Enter chat text here..."
+        type="text" />
+    <a href="javascript:void(0);" id="send-link" onclick="postRemark();"
+        >Send</a>
+  </body>
+
+  <script>poll();</script>
+</html>
+{% endautoescape %}
