@@ -46,8 +46,7 @@ function poll() {
     chatWindow.innerHTML += response;
     chatWindow.scrollTop = chatWindow.scrollHeight; 
 
-//    setTimeout(poll, 700);
-    poll();
+    setTimeout(poll, 500);
   };
 
   makeAjaxCall({'action': 'read'}, writeRemarks);
